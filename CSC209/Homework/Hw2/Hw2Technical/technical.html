@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link id="theme" rel="stylesheet" 
+          type="text/css" href="hw2Med.css" />
+<title>HW 2</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>Susie's Research Projects</h1>
+  <button type="button" id="readMeB" onclick="buttonClick()">readMe</button>
+
+
+<script>
+function buttonClick() {
+let buttonText = document.getElementById("readMeB").textContent;
+if(buttonText==='readMe'){
+var text = document.getElementById("readMe");
+  text.style.display = "block";
+const button = 
+        document.querySelector('button');
+     button.innerHTML = 'Hide';
+} else if(buttonText=='Hide'){
+var text = document.getElementById("readMe");
+  text.style.display = "none";
+const button = 
+        document.querySelector('button');
+     button.innerHTML = 'readMe';
+}
+
+
+        }
+</script>
+
+<p id="readMe" style="display:none">Welcome to Susie's HW 2 technical+creative page. On the left, you can adjust the text size and navigate to some of my favorite articles about bugs. In the table below, there is a summary of my research and you can click on the project name to learn more about it!</p>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Change Text Size</h2>
+
+     <button class="smallTextButton"
+    onclick="toggleThemeSmall()">
+   </button>
+
+ <button class="medTextButton"
+    onclick="toggleThemeMed()">
+   </button>
+
+ <button class="bigTextButton"
+    onclick="toggleThemeBig()">
+   </button>
+
+<!--theme change code adapted from https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript/-->
+<script>
+        function toggleThemeSmall() {
+            // Select the <link> element
+            let theme = document.getElementById('theme');
+
+            theme.setAttribute('href', 'hw2Small.css');
+        }
+       function toggleThemeMed() {
+            // Select the <link> element
+            let theme = document.getElementById('theme');
+
+            theme.setAttribute('href', 'hw2Med.css');
+        }
+       function toggleThemeBig() {
+            // Select the <link> element
+            let theme = document.getElementById('theme');
+
+            theme.setAttribute('href', 'hw2Big.css');
+        }
+
+
+    </script>
+
+    <h2>Interesting Papers</h2>
+    <p><ul>
+  <li><a href="https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2019.00193/full">Abarca et al. (2019)</a></li>
+
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S1055790307003569?via%3Dihub">Ware et al. (2008)</a></li>
+
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S1055790322000999">Jin et al. (2022)</a></li>
+
+  <li><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1553">Harvey et al. (2022)</a></li>
+
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S0169534702025806?via%3Dihub">Schlaepfer et al. (2002)</a></li>
+
+
+</ul></p>
+  </div>
+  
+  <div class="column middle">
+<br>
+    <table id="research">
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th>Images</th>
+  </tr>
+  <tr>
+    <td><a href="humidity.html">Assessing Caterpillar Survivability over a Humidity Gradient</a></th>
+    <td>01/24 to Present</td>
+    <td>Smith College</td>
+    <td>Studying the impact of humidity and host plant on <a href="https://en.wikipedia.org/wiki/Baltimore_checkerspot" target="_blank">Baltimore Checkerspot</a> caterpillar survivability. </td>
+    <td><img src="Hw2Images/humidity.jpeg" alt="humidity" style="width:200px;height:260px;"></td>
+  </tr>
+  <tr>
+    <td><a href="dragonfly.html">Dragonfly Systematics</a></th>
+    <td>06/24 to 08/24</td>
+    <td>American Museum of Natural History</td>
+    <td>Researching the systematics of the dragonfly genus <a href="https://en.wikipedia.org/wiki/Libellula" target="_blank"><i>Libellula</i></a> using subgenomic anchored hybrid enrichment data and ancestral state reconstruction of male secondary genitalia. </td>
+    <td><img src="Hw2Images/amnh.jpeg" alt="amnh" style="width:260px;height:200px;"></td>
+  </tr>
+
+  <tr>
+    <td><a href="eDNA.html">Moth Identification Using eDNA</a></th>
+    <td>10/24 to 11/24</td>
+    <td>Smith College</td>
+    <td>Identified moths collected at the MacLeish Field Station using Sanger sequencing to confirm identifications made by an automated moth monitor.</td>
+    <td><img src="Hw2Images/mothitor.png" alt="mothitor" style="width:270px;height:220px;"></td>
+  </tr>
+
+  <tr>
+    <td>Insect Community Composition after Restoration</th>
+    <td>09/23 to 12/23</td>
+    <td>Smith College</td>
+    <td>Assessed the insect community composition in restored and mature areas of the MacLeish Field Station over multiple seasons to determine if the restoration efforts were increasing insect biodiversity to ultimately be comparable to mature areas.</td>
+    <td><img src="Hw2Images/restoration.jpeg" alt="restoration" style="width:220px;height:300px;"></td>
+  </tr>
+
+  <tr>
+    <td>Insect Curation</th>
+    <td>09/23 to 12/23</td>
+    <td>UMass Amherst</td>
+    <td>Identified and sorted unlabeled specimens from the <a href="https://en.wikipedia.org/wiki/Beetle" target="_blank">Coleoptera</a> and <a href="https://en.wikipedia.org/wiki/Lepidoptera" target="_blank">Lepidoptera</a> collections.</td>
+    <td><img src="Hw2Images/umass.jpeg" alt="umass" style="width:260px;height:260px;"></td>
+  </tr>
+
+  <tr>
+    <td>Insect Curation</th>
+    <td>04/23 to 08/23</td>
+    <td>Ohio State University</td>
+    <td>Sorted <a href="https://en.wikipedia.org/wiki/Longhorn_beetle">Cerambycidae</a> collection and rebottled alcohol preserved cockroach collection.</td>
+    <td><img src="Hw2Images/osu.jpeg" alt="osu" style="width:260px;height:220px;"></td>
+  </tr>
+
+
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>

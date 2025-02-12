@@ -1,0 +1,132 @@
+.header {
+  background-color: #fcd7f7;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create columns that float next to each other */
+.column {
+  float: left;
+}
+.column.side {
+font-size: 25px;
+  width: 15%;
+}
+
+/* Middle column */
+.column.middle {
+font-size: 25px;
+  width: 85%;
+float: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #faf5f9;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #701e65;
+  color: white;
+}
+
+#research {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#research td, #research th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#research tr:nth-child(even){background-color: #faf5f9;}
+
+#research tr:hover {background-color: #fce8fa;}
+
+#research th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fcd7f7;
+  color: black;
+}
+
+.smallTextButton {
+         width: 25px;
+         height: 25px;
+         background-image: url('Hw2Images/small.png');
+         background-size: cover;
+	 background-color: white;
+         border: none;
+         cursor: pointer;
+      }
+
+.medTextButton {
+         width: 50px;
+         height: 50px;
+         background-image: url('Hw2Images/small.png');
+         background-size: cover;
+         border: none;
+	 background-color: white;
+         cursor: pointer;
+      }
+
+.bigTextButton {
+         width: 75px;
+         height: 75px;
+         background-image: url('Hw2Images/small.png');
+         background-size: cover;
+	 background-color: white;
+         border: none;
+         cursor: pointer;
+      }
