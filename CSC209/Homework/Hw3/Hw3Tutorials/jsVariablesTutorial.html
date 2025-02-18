@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Variables</title>
+</head>
+<body>
+
+<h1>JavaScript Variables Tutorial</h1>
+<p>Variables can be declared in 4 ways: automatically, using 'var', using 'let', and using 'const'. It's considered best practice to always declare variables before use and declare them at the beginning of a script. 
+
+<br>
+The 'var' keyword was used in JS code a long time ago and now 'let' and 'const' are used (unless you have an old browser or something). Example using let:
+</p>
+
+<p id="demo"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+</script>
+
+<h2> When to use var, let, or const?</h2>
+<p>Use 'const' if the value and type should not change. Only use 'let' if you can't use 'const'. Only use 'var' if you haveeeee to support old browsers.</p>
+
+<p>Data types and values will be undefined until you declare them using =. If you redeclare a variable with 'var' it will not lose its value but you cannot redeclare variables using 'let' or 'const'. 
+
+
+</body>
+</html>

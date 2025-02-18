@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strings and Arrays</title>
+</head>
+<body>
+
+<h1>JavaScript Strings and Arrays Tutorial</h1>
+<p>JS strings can be made with double or single quotes. If you need to include both in a stringe, use a template string defined with backticks. Ex. </p>
+<p id="demo1"></p>
+
+<p>Templates not supported in Internet Explorer.</p>
+
+<script>
+let text = `He's often called "Johnny"`;
+document.getElementById("demo1").innerHTML = text;
+</script>
+
+<h2>String Length</h2>
+<p>Use str.length it iwll return the length of the string</p>
+
+<h2>Escape Characters</h2>
+<p>Usual syntax and characters used in other programming languages.</p>
+
+<h2>String Comparison</h2>
+<p>Use == to see if the contents of strings are equal, use === to see if the objects are equal</p>
+
+<h2>Other String Methods</h2>
+<p>Many string methods exist and are similar to java</p>
+
+<h2>Interpolation</h2>
+<p>You can interpolate variables and expressions into template strings</p>
+<p id="demo2"></p>
+
+<p>Templates are not supported in Internet Explorer.</p>
+
+<script>
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+document.getElementById("demo2").innerHTML = text;
+</script>
+
+<h2>Arrays</h2>
+<p>They're really similar to java arraylists sort of. Use push and pop.</p>
+<p>To check if something is an array, use x instanceof Array or Array.isArray(arr) method. </p>
+
+<p>Arrays can be iterated through numerous ways including with an interator using arr.entries(). Ex:</p>
+<p id="demo3"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+for (let x of f) {
+  document.getElementById("demo3").innerHTML += x + "<br>";
+}
+</script>
+
+</body>
+</html>

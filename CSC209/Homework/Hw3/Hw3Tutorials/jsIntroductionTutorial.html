@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Introduction</title>
+</head>
+<body>
+
+<h1>JS Introduction Tutorial</h1>
+<p>JavaScript can be used to update and change HTML and CSS as well as caclulate, manipulate and validate data. </p>
+
+<h2>Using JS to Change HTML Content</h2>
+<p id="demo"> Use the button and JS to change this HTML content!</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+<h2>Using JS to Change HTML Attribute Values</h2>
+<p> JS can change the src of an image!</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<h2>Using JS to Change HTML Styles (CSS)</h2>
+<p id="cssDemo"> JavaScript can change the style of an HTML element</p>
+
+<button type="button" onclick="document.getElementById('cssDemo').style.fontSize='35px'">Click Me!</button>
+
+<h2>Using JS to Hide Elements</h2>
+<p id="hide">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('hide').style.display='none'">Click Me!</button>
+
+<h2>Using JS to Show Elements</h2>
+<p id="show" style="display:none">JavaScript can show hidden HTML elements</p>
+
+<button type="button" onclick="document.getElementById('show').style.display='block'">Click Me!</button>
+
+
+</body>
+</html>

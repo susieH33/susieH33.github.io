@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Objects</title>
+</head>
+<body>
+
+<h1>JavaScript Objects Tutorial</h1>
+<h2>Object Constructor Example</h2>
+<p id="demo"></p>
+
+<script>
+
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "English";
+}
+
+// Create 2 Person objects
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+// Display nationality
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.nationality + ". My mother is " + myMother.nationality; 
+</script>
+
+<h2>Printing Object Properties</h2>
+<p>Displaying just the object will output [object Object]</p>
+<p id="demo2"></p>
+
+<script>
+// Create an Object
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Display Object
+document.getElementById("demo2").innerHTML = person;
+</script>
+
+<p>Instead, you can print each property as a string, use Object.entries(), or use JSON.stringify(obj). Example using Object.entries(): </p>
+
+<p id="demo3"></p>
+
+<script>
+const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+
+let text = "";
+for (let [fruit, amount] of Object.entries(fruits)) {
+  text += fruit + ": " + amount + "<br>";
+}
+
+document.getElementById("demo3").innerHTML = text;
+</script>
+
+</body>
+</html>

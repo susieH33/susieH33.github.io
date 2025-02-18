@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Let, const, and more</title>
+</head>
+<body>
+
+<h1>Let, Const, Operators, Arithmetic, and Assignment Tutorials</h1>
+<h2>JavaScript Let</h2>
+<p>The 'let' keyword was introduced in 2015. Variables declared with 'let' have Block Scope, must be declared before use, and cannot be redeclared in the same scope.</p>
+
+<h3>Block Scope vs Global Scope</h3>
+<p>Variables declared with 'let' and 'const' have block scope and cannot be accessed outside the {} block they were declared in.</p>
+<script>
+{
+  let x = 2;
+}
+// x can NOT be used here
+</script>
+
+<p>Variables declared with 'var' always have global scope meaning they can be accessed from outside the {} block. </p>
+
+<h2>JavaScript Const</h2>
+<p>Variables defined with 'const' must be assigned when they are declared and cannot be reassigned. They also have Block Scope. For example: </p>
+
+<p id="demo"></p>
+
+<script>
+try {
+  const PI = 3.141592653589793;
+  PI = 3.14;
+}
+catch (err) {
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+<p>You should declare variables with 'const' when you know the variable won't be changed such as new Arrays, Objects, Functions, or RegExp</p>
+
+<p>This does not mean the value of the variable has to be constant, it means it's a constant reference to a value. Thus, you cannot reassign a const value/array/object but you can change the elements of a constant array or properties of a constant object. </p>
+
+<h3>Constant Array Example</h3>
+<p>Declaring a constant array does NOT make the elements unchangeable. Here we make an array and append 'audi' to it.</p>
+
+<p id="demo1"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("demo1").innerHTML = cars; 
+</script>
+
+<p>However, you cannot reassign the array: </p>
+<p id="demo2"></p>
+
+<script>
+try {
+  const cars = ["Saab", "Volvo", "BMW"];
+  cars = ["Toyota", "Volvo", "Audi"];
+}
+catch (err) {
+  document.getElementById("demo2").innerHTML = err;
+}
+</script>
+
+<h2>JavaScript Operators</h2>
+<p>There are many JS operators:</p>
+<ul>
+  <li>Arithmetic Operators</li>
+  <li>Assignment Operators</li>
+  <li>Comparison Operators</li>
+  <li>String Operators</li>
+  <li>Logical Operators</li>
+  <li>Bitwise Operators</li>
+  <li>Ternary Operators</li>
+  <li>Type Operators</li>
+</ul>
+
+<h3>JS String Comparison</h3>
+<p>All conditional operators can be used on both numbers and strings. With strings, they are compared alphabetically. Ex: </p>
+
+<p id="demo3"></p>
+
+<script>
+let text1 = "A";
+let text2 = "B";
+let result = text1 < text2;
+document.getElementById("demo3").innerHTML = "Is A less than B? " + result;
+</script>
+
+<h3>Type Operators</h3>
+<p> The 'typeof' operator returns the type of a variable and the 'instanceof' operator returns true if an object is an instance of an object type. </p>
+
+<h2>JavaScript Arithmetic Operators</h2>
+<p>Basically the same except for exponentials which use ** instead of a function like Math.pow. Example: </p>
+<p id="demo4"></p>
+
+<script>
+let x = 5;
+document.getElementById("demo4").innerHTML = x ** 2;
+</script>
+
+
+</body>
+</html>

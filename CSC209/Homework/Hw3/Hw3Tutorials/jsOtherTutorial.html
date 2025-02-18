@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Misc Tutorials</title>
+</head>
+<body>
+
+<h1>JavaScript if, else, and else if</h1>
+<p id="demo1"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo1").innerHTML = greeting;
+</script>
+
+<h1>JavaScript Switch Statement</h1>
+<p id="demo2"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo2").innerHTML = text;
+</script>
+
+<h1>JavaScript Loops</h1>
+<p>JS has for, for/in, for/of, while, and do/while loops</p>
+<h2>For In loops go through the properties of an Object: </h2>
+<p id="demo3"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+for (let x in numbers) {
+  txt += numbers[x] + "<br>"; 
+}
+
+document.getElementById("demo3").innerHTML = txt;
+</script>
+
+<h2>For Of loops go through the values of an iterable object (ie arrays, strings, maps, NodeLists, and others). Example: </h2>
+<p id="demo4"></p>
+
+<script>
+let language = "JavaScript";
+
+let text = "";
+for (let x of language) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo4").innerHTML = text;
+</script>
+
+<h1>JavaScript Debugging</h1>
+<p> The debugger keyword stops execution and calls the debugger if applicable.</p>
+<p id="demo5"></p>
+
+<p>With the debugger turned on, the code below should stop executing before it executes the third line.</p>
+
+<script>
+let x = 15 * 5;
+debugger;
+document.getElementById("demo5").innerHTML = x;
+</script>
+
+<h1>JavaScript Best Practices</h1>
+<p>Avoid global variables, declare local variables, declarations at the top, intialize variables when you declare them, don't use new Object(), use === not ==. </p>
+
+
+
+</body>
+</html>

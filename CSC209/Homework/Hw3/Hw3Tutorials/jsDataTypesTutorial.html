@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<title>Data Types</title>
+</head>
+<body>
+
+<h1>JavaScript Data Types Tutorial</h1>
+<p>JS has 8 data types</p>
+<ul>
+  <li>String</li>
+  <li>Number</li>
+  <li>Bigint</li>
+  <li>Boolean</li>
+  <li>Undefined</li>
+  <li>Null</li>
+  <li>Symbol</li>
+  <li>Object</li>
+</ul>
+
+<h2>Object Data Type</h2>
+<p>The object data type can contain both built in obkects and user defined objects. Examples of built in objects include: arrays, maps, dates, sets, intarrays, floatarrays, promises, and more. </p>
+
+<p>JavaScript evaluates expressions left ot right and will turn numbers into strings when added</p>
+
+<p id="demo1"></p>
+
+<script>
+let x = "Volvo" + 16;
+document.getElementById("demo1").innerHTML = x;
+</script>
+
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="demo2"></p>
+
+<script>
+let y = 16 + 4 + "Volvo";
+document.getElementById("demo2").innerHTML = y;
+</script>
+
+<h2>Dynamic Types</h2>
+<p>JS has dynamic types which means that variables can be used to hold different data types.</p>
+
+<p id="demo3"></p>
+
+<script>
+let z;         // Now z is undefined
+z = 5;         // Now z is a Number
+z = "John";    // Now z is a String
+
+document.getElementById("demo3").innerHTML = z;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Output</title>
+</head>
+<body>
+
+<h1>JavaScript Output Tutorial</h1>
+<p>JavaScript can display data in different ways: to an HTML element, to HTML output, to an altert box, and to the browser console.</p>
+
+<h2>innerHTML</h2>
+<p> Use the 'document.getElementById(id)' method followed by .innerHTML. This will change the content of the element.</p>
+
+<p id="innerHTMLEx"></p>
+<script>
+document.getElementById("innerHTMLEx").innerHTML = "This text was written using innerHTML";
+</script>
+
+<h2>document.write()</h2>
+<p>Never call document.write after the document has finished loading (ex in an onclick of a button). It will overwrite the whole document. This function should only be used for testing.</p>
+
+<script>
+document.write("This text was written with document.write()");
+</script>
+
+
+<h2>window.alert()</h2>
+<p> You can output text into an alert box. Note the 'window' keyword is optional</p>
+<script>
+window.alert(You can use an alert box to display data!);
+</script>
+
+<h2>console.log()</h2>
+<p> You can use console.log() to display data for debugging purposes</p>
+<script>
+console.log(5 + 6);
+</script>
+
+<h2>window.print()</h2>
+<p>JS doesn't have a print object or method. You can use window.print() ot print the content of the current browser.</p>
+<button onclick="window.print()">Print this page</button>
+</body>
+</html>

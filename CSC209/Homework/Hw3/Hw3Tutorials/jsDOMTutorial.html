@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS DOM</title>
+</head>
+<body>
+
+<h1>JavaScript DOM Tutorial</h1>
+<p>The HTML DOM (document obkect model) allows JS to change the content of HTML elements</p>
+
+<h2>Changing HTML content</h2>
+<p>Using this syntax: document.getElementById(<i>id</i>).innerHTML = <i>new HTML</i></p>
+<p> Refer to JS Introduction tutorial for more info</p>
+
+<h2>Changing the Value of an Attribute</h2>
+<p>Using this syntax: document.getElementById(<i>id</i>).<i>attribute</i> = <i>new value</i>
+<p> Refer to JS Introduction tutorial for more info</p>
+
+<h2>Dynamic HTML Content</h2>
+<p>JS can create dynamic HTML content:</p>
+<p id="dynamic"></p>
+<script>
+document.getElementById("dynamic").innerHTML = "Date : " + Date(); </script>
+
+</body>
+</html>

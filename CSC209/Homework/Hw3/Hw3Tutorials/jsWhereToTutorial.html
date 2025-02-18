@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("headDemo").innerHTML = "Paragraph changed.";
+}
+</script>
+<title>JS Where To</title>
+</head>
+<body>
+
+<h1>JavaScript Where To Tutorial</h1>
+<p>In HTML, js code can be inserted between 'script' tags.</p>
+
+<p id="scriptDemo"> </p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+<h2>JS Functions and Events</h2>
+<p>In JS a function is a block of code that can be executed when called. Ex a function can be called when an event occurs such as clicking a button.</p>
+
+<p>JS scripts can be placed in the body, head, or both of an HTML page</p>
+
+<h2>JavaScript in the 'head'</h2>
+<p id="headDemo">Demo JS in the head section</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<h2>JavaScript in the 'body'</h2>
+<p id="bodyDemo">Demo JS in the body section</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+  document.getElementById("bodyDemo").innerHTML = "Paragraph changed.";
+}
+</script>
+<p>Note that placing scripts at the bottom of the body element improves display speed</p>
+
+<h2>External JavaScript</h2>
+<p>Scripts can also be placed in external files with .js file extensions. This is practice when the same code is used in numerous web pages. Put the name of the script file in the src attribute of a script tag.</p>
+<p id="externalDemo">Demo JS using an external JS file</p>
+<script src="whereToScript.js"></script>
+<button type="button" onclick="myExternalFunction()">Try it</button>
+<p>External scripts have advantages including separating HTML and code, making files easier to read, and using several scripts in one page</p>
+
+<h2>External References</h2>
+<p>External scripts can be referenced with a full URL, with a file path, or without a path</p>
+
+</body>
+</html>
